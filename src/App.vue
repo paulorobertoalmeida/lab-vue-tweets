@@ -1,17 +1,27 @@
 <template>
   <div class="app">
-    <Tweet />
+     <!-- <Tweet tweet="tweets" {{user.name}}/>  -->
+     <Tweet  :name="brasil" :handle="cat" :timestamp="timestamp"  :message="malaga" /> 
   </div>
+
+
 </template>
+
+
 
 <script>
 
 import Tweet from './components/Tweet.vue';
 
 export default {
-  props: ['foo'],
+  components: { Tweet},
+  props: ['user.name', 'user.image', 'user.handle', 'timestamp', 'message'],
     data: () => ({
-        tweets: [
+      brasil : "brasil mola",
+      cat: "catalunya mola mas",
+      madrid: "no mola tanto",
+      malaga: "hace calor",
+       tweets: [
             {
                 user: {
                     name: "Thoughts of Dog®",
