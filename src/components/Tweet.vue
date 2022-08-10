@@ -33,6 +33,17 @@
     <i class="fas fa-ellipsis-h"></i>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    props: [],
+    return {};
+  },
+  methods: {},
+  computed: {},
+  watch: {},
+};
+</script> 
 
 <style scoped>
 a {

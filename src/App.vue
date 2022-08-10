@@ -9,6 +9,7 @@
 import Tweet from './components/Tweet.vue';
 
 export default {
+  props: ['foo'],
     data: () => ({
         tweets: [
             {
