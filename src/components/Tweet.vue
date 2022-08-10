@@ -16,9 +16,7 @@
         <span className="timestamp">{{ timestamp }}</span>
       </div>
 
-      <p className="message"> 
-        {{message}}
-      </p>
+      <p className="message">{{ message }}</p>
 
       <div className="actions">
         <!-- Font Awesome icons -->
@@ -30,24 +28,21 @@
     </div>
 
     <i class="fas fa-ellipsis-h"></i>
-
-</div>
+  </div>
 </template>
 <script>
 export default {
-   name: 'Tweet',
-   props: ['name','handle', 'timestamp', 'message'],
+  name: "Tweet",
+  props: ["name", "handle", "timestamp", "message", "image"],
   data() {
     return {
-
+      imagen: "image",
     };
   },
-  methods: {},
   computed: {},
   watch: {},
 };
-</script> 
-
+</script>
 <style scoped>
 a {
   color: #42b983;
