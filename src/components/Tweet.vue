@@ -1,10 +1,10 @@
 <template>
   <div className="tweet">
-    <img
-      src="https://i.imgur.com/9yw1Fyw.jpg"
+    <div
+      :style="{backgroundImage:`url(${ image })`, backgroundSize: 'cover'}"
       className="profile"
       alt="profile"
-    />
+    ></div>
 
     <div className="body">
       <div className="top">
